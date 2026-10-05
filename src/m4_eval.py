@@ -10,7 +10,7 @@ if hasattr(sys.stderr, "reconfigure"):
 from dataclasses import dataclass
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import TEST_SET_PATH
+from config import OPENAI_API_KEY, TEST_SET_PATH
 
 
 @dataclass

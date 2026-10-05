@@ -90,7 +90,7 @@ class DenseSearch:
             try:
                 from sentence_transformers import SentenceTransformer
                 self._encoder = SentenceTransformer(EMBEDDING_MODEL, local_files_only=True)
-            except (ImportError, OSError, RuntimeError, ValueError):
+            except (ImportError, OSError, RuntimeError, ValueError, TypeError):
                 self._encoder = False
         return self._encoder
 

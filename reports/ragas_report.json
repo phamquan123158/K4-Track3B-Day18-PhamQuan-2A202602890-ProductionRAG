@@ -1,0 +1,91 @@
+{
+  "aggregate": {
+    "faithfulness": 0.6512522514705763,
+    "answer_relevancy": 0.5817800178024407,
+    "context_precision": 1.0,
+    "context_recall": 0.7279301381333201
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Nếu cần mua một chiếc laptop 30 triệu cho nhân viên mới, ai phê duyệt và cần gì từ phòng CNTT?",
+      "worst_metric": "context_recall",
+      "score": 0.4826086956521739,
+      "avg_score": 0.6228260869565218,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking, add BM25 coverage, or widen retrieval depth."
+    },
+    {
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.46923076923076923,
+      "avg_score": 0.6475961538461539,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Nghỉ phép không lương 20 ngày cần ai phê duyệt?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5333333333333333,
+      "avg_score": 0.6648148148148147,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Thông tin lương thuộc cấp độ phân loại dữ liệu nào?",
+      "worst_metric": "faithfulness",
+      "score": 0.4833333333333333,
+      "avg_score": 0.6669871794871794,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten the prompt, shorten context, and reduce temperature."
+    },
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5363636363636364,
+      "avg_score": 0.6778409090909091,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Khi phát hiện malware trên máy, nhân viên có nên tự xử lý không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5161290322580645,
+      "avg_score": 0.6786290322580645,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệt?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5,
+      "avg_score": 0.6927083333333333,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày phép năm?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5680000000000001,
+      "avg_score": 0.704,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Có cần kích hoạt xác thực đa yếu tố (MFA) không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.45625000000000004,
+      "avg_score": 0.706640625,
+      "diagnosis": "Answer does not match the question",
+      "suggested_fix": "Refine prompt instructions and make the answer more grounded in the retrieved context."
+    },
+    {
+      "question": "Lương thử việc của nhân viên Junior mức cao nhất là bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "avg_score": 0.7115384615384616,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten the prompt, shorten context, and reduce temperature."
+    }
+  ]
+}
